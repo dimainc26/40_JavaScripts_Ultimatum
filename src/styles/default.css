@@ -40,6 +40,7 @@ ul {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  display: flex;
 }
 
 .nav-bar {
@@ -195,4 +196,118 @@ ul {
 
 .nav-bar:hover > .author-box > .avatar-box > .link {
     margin-left: 0;
+}
+
+
+
+
+/* HOME */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.titles {
+  
+  position: absolute;
+  right: 0;
+  width: 80%;
+  margin-right: 20px;
+}
+
+.home-title {
+  font-size: 5rem;
+  line-height: 220px;
+  text-align: right;
+}
+
+.home-me {
+  text-align: right;
+  font-size: 2rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.home-me > a {
+  color: var(--black-color);
+}
+
+/* Phone */
+@media only screen and (max-width: 48em) {
+
+  :root {
+    font-size: 28px;
+  }
+
+  body {
+    /* background-color: red; */
+  }
+
+  .nav-bar:hover {
+    width: 100px;
+  }
+
+  .nav-bar:hover > .logo-box > span {
+    opacity: 0;
+    font-size: .2rem;
+  }
+
+  .nav-bar:hover > .nav-list > .nav-item > button > i {
+    margin-right: 40px;
+  }
+
+  .nav-bar:hover > .author-box > .avatar-box {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nav-bar:hover > .author-box > .avatar-box > .link {
+    margin-left: 10px;
+  }
+
+  .titles {
+    width: 60%;
+  }
+  .nav-bar:hover > .logo-box {
+    width: 80px;
+    height: 80px;
+  }
+
+  .home-title {
+    font-size: 2.6rem;
+    line-height: 70px;
+    height: 80vh;
+    padding-top: 10vh;
+  }
+
+  .home-me {
+    font-size: 1rem;
+  }
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 48em) {
+  body {
+    background-color: green;
+  }
+}
+@media only screen and (min-width: 64em) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/* Actual */
+
+@media only screen and (min-width: 80em) {
+  body {
+    background-color: transparent;
+  }
 }
